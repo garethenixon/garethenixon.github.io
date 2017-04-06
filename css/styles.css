@@ -1,0 +1,405 @@
+/* Box Model Hack */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+} 
+.clearfix:after {
+  clear: both;
+}
+
+.clear {
+  clear: both;
+}
+
+video {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+#overlay {
+	position: absolute;
+	top: 0; right: 0; left: 0; bottom: 0;
+	background: rgba(0,0,0,0);
+}
+
+#landing-page h1 {
+	margin: 75px 0 0 75px;
+	font-size: 100px;
+}
+
+#landing-page p {
+	display:inline-block;
+	margin-top: -20px;
+	margin-left: 81px;
+	font-size: 50px;
+	text-transform: lowercase;
+	letter-spacing: 15px;
+}
+
+#bondi {
+	padding-left: 95px;
+}
+
+#landing-page a {
+	display: block;
+	color: pink;
+	text-align: center;
+	font-size: 30px;
+	margin: auto;
+	margin-top: 200px;
+	width: 30%;
+	text-decoration: none;
+}
+
+.navbar {
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+	border-color: #fff;
+	margin-left: 30px;
+	margin-bottom: 0;
+}
+
+.brand {
+  font-family: 'Roboto', sans-serif;
+  color: pink;
+  letter-spacing: 2.5px;
+}
+
+.nav li {
+	font-family: 'Roboto',sans-serif;
+	padding-left: 20px;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	color: pink;
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #000;
+  background: pink;
+ }
+
+.navbar-toggle {
+	margin-right: 30px;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.box {
+	padding: 0;
+}
+
+.paragraph-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.paragraph-content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+.paragraph-content-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 90px;
+}
+
+.paragraph-content-inner p {
+  display: table-cell;
+  text-align: justify;
+  vertical-align: middle;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.75);
+  padding: 0 15px;
+}
+
+.square-box:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.square-content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: #000;
+}
+
+.square-content-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding:20px;
+}
+
+.square-content h5 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+}
+
+.bordered:before {
+	content: '';
+  display: block;
+  height: 1px;
+  width: 80px;
+  background-color: #fff;
+  margin: 0 auto 20px;
+}
+
+.bordered:after {
+	content: '';
+  display: block;
+  height: 1px;
+  width: 80px;
+  background-color: #fff;
+  margin: 20px auto 0;
+}
+
+.box-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.image-box, .long-image-box {
+	padding: 0;
+	margin: 0;
+}
+
+.row a {
+	font-family: open sans;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.image-box{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.image-content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+}
+.image-content-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding:20px;
+}
+
+.image-content-inner p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+}
+
+.sign-up-content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #000;
+  background: #fff;
+}
+.sign-up-content-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding:20px;
+}
+
+.sign-up-content h5 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 12px;
+}
+
+
+.sign-up-content-inner h6 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+}
+
+.sign-up-content-inner h5 {
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	margin: 0;
+	letter-spacing: 2.5px;
+}
+
+form {
+	text-align: center;
+}
+
+form input {
+	display: block;
+	margin: 0 auto;
+	border-color: transparent;
+	border-bottom: solid 1px black;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.submit {
+	margin-top:10px;
+	padding: 0 20px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 5px;
+}
+
+.hide-mobile {
+	display: block;
+}
+
+@media (max-width: 750px) {
+	.hide-mobile {
+		display: none;
+	}
+}
+
+footer {
+  display: block;
+  padding: 20px;
+  font-family: sans-serif;
+  margin-bottom: 50px;
+}
+
+.social-icons {
+  max-width: 600px;
+}
+
+ ul {
+ list-style-type: none;
+ display: inline;
+ }
+
+.icon {
+  float: left;
+  position: relative;
+  width: 19%;
+  height: 0;
+  margin: 1% 0.5%;
+  padding-bottom: 19%;
+}
+@media all and (min-width: 640px) {
+  .icon {
+    width: 9%;
+    padding-bottom: 9%;
+  }
+}
+.icon:last-of-type {
+  margin-right: 0;
+}
+.icon a {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.2s ease-out;
+}
+.icon a:hover {
+  background-color: #222;
+  background-size: 0%;
+  transition: all 0.2s ease-out;
+}
+.icon__name {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -7px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  filter: blur(25px);
+  transform: translateZ(0);
+  will-change: transform;
+}
+.icon:hover .icon__name {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  filter: blur(0);
+}
+.icon--facebook a {
+  background-color: #fff;
+  background-image: url('http://simpleicons.org/icons/facebook.svg');
+}
+.icon--twitter a {
+  background-color: #fff;
+  background-image: url('http://simpleicons.org/icons/twitter.svg');
+}
+.icon--instagram a {
+  background-color: #fff;
+  background-image: url('http://simpleicons.org/icons/instagram.svg');
+}
+.icon--spotify a {
+  background-color: #fff;
+  background-image: url('http://simpleicons.org/icons/spotify.svg');
+}
+.icon--tripadvisor a {
+  background-color: #fff;
+  background-image: url('http://simpleicons.org/icons/tripadvisor.svg');
+}
+
+.footer-divider {
+  margin: 0;
+}
