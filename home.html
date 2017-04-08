@@ -58,7 +58,7 @@
           <div class='square-box'>
             <div class='square-content'>
               <div class='square-content-inner'>
-                <h5 class="bordered">OUR MENU</h5>
+                <h5 class="bordered">our menu</h5>
                 <a href="menu.html" class="box-link"></a>
               </div>
             </div>
@@ -94,7 +94,7 @@
           <div class='square-box'>
             <div class='square-content'>
               <div class='square-content-inner'>
-                <h5 class="bordered">REQUEST A RESERVATION</h5>
+                <h5 class="bordered">request a reservation</h5>
                 <a href="menu.html" class="box-link"></a>
               </div>
             </div>
@@ -228,7 +228,7 @@
           <div class='square-box'>
             <div class='square-content'>
               <div class='square-content-inner'>
-                <h5 class="bordered">SPOIL MUM <br>THIS MOTHER'S DAY</h5>
+                <h5><span class="news">latest news</span><br><br><br><span class="bordered">spoil mum<br>this mother's day</span></h5>
                 <a href="news.html" class="box-link"></a>
               </div>
             </div>
@@ -239,7 +239,7 @@
           <div class='square-box'>
             <div class='square-content'>
               <div class='square-content-inner'>
-                <h5 class="bordered">THURSDAY NIGHTS:<br>CHAMPAGNE & OYSTERS</h5>
+                <h5><span class="news">latest news</span><br><br><br><span class="bordered">thursdays nights:<br>champange & oysters</span></h5>
                 <a href="news.html" class="box-link"></a>
               </div>
             </div>
@@ -279,37 +279,82 @@
   </section> <!-- end of lower-section -->
 
   <footer>
-      <ul class="social-icons">
-        <li class="icon icon--facebook">
-          <a href="http://www.facebook.com/garethnixon">
-            <span class="icon__name">Facebook</span>
-          </a>
-        </li>
-        <li class="icon icon--twitter">
-          <a href="http://twitter.com">
-            <span class="icon__name">Twitter</span>
-          </a>
-        </li>
-        <li class="icon icon--instagram">
-          <a href="http://www.instagram.com/garethnixon">
-            <span class="icon__name">Instagram</span>
-          </a>
-        </li>
-        <li class="icon icon--spotify">
-          <a href="http://www.spotify.com">
-            <span class="icon__name">Spotify</span>
-          </a>
-        </li>
-        <li class="icon icon--tripadvisor">
-          <a href="http://www.tripadvisor.com">
-            <span class="icon__name">TripAdvisor</span>
-          </a>
-        </li>
-      </ul>
+     <div class="container-fluid">
 
-      <div class="footer-divider">
-        <p>|</p>
-      <div>
+      <div class="row row-five">
+
+        <div class="col-xs-12 col-md-4 box">
+          <ul class="social-icons clearfix">
+            <li class="icon icon--facebook">
+              <a href="http://www.facebook.com/garethnixon">
+                <span class="icon__name">Facebook</span>
+              </a>
+            </li>
+            <li class="icon icon--twitter">
+              <a href="http://twitter.com">
+                <span class="icon__name">Twitter</span>
+              </a>
+            </li>
+            <li class="icon icon--instagram">
+              <a href="http://www.instagram.com/garethnixon">
+                <span class="icon__name">Instagram</span>
+              </a>
+            </li>
+            <li class="icon icon--spotify">
+              <a href="http://www.spotify.com">
+                <span class="icon__name">Spotify</span>
+              </a>
+            </li>
+          </ul>
+        </div> <!-- end of first column --> 
+
+        <div class="col-xs-12 col-md-4 box">
+          <div class= "contact-details">
+            <a href="https://goo.gl/maps/nFt6TwnzLxL2">6-8 Notts Ave, Bondi Beach, NSW 2026
+            <br>
+            <a href="tel:+61299652941">+61 2 9965 2941</a>
+            <br>
+            <a href="mailto:info@nixons.com.au">info@nixons.com.au</a>
+            <p class="padding">padding</p>
+          </div>
+        </div> <!-- end of second column --> 
+
+        <div class="col-xs-12 col-md-4 box">
+          <div class="feedback">
+            <!-- Button trigger modal -->
+            <h6>how was your experience?</h6>
+            <p>Good or bad, please let us know by</p> 
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              leaving us feedback here.
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">your feedback</h4>
+                  </div>
+                  <div class="modal-body feedback-form">
+                    <form action="action_page.php" method="post"> 
+                      <input type="text" name="name" placeholder="name">
+                      <input type="email" name="emailAddress" placeholder="email">
+                      <textarea type="text" placeholder="comments" style="height:200px"></textarea>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+                    <button type="button" class="btn btn-primary">submit</button>
+                  </div>
+                </div> <!-- end of modal content -->
+              </div>
+            </div> <!-- end of modal -->
+              <p class="copyright">© 2017 NIXONS</p>
+          </div> <!-- end of feedback  -->
+        </div> <!-- end of column three -->
+      </div> <!-- end of row  -->
+    </div> <!-- end of container  -->
   </footer>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

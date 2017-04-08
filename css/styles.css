@@ -63,9 +63,9 @@ video {
 
 .navbar {
 	font-family: 'Roboto', sans-serif;
-	background-color: #fff;
-	border-color: #fff;
-	margin-left: 30px;
+	background-color: #e6e6e6;
+	border-color: #e6e6e6;
+	padding-left: 30px;
 	margin-bottom: 0;
 }
 
@@ -136,6 +136,7 @@ video {
   color: #000;
   font-weight: bold;
   background-color: rgba(255,255,255,0.75);
+  border-radius: 15px;
   padding: 0 15px;
 }
 
@@ -170,6 +171,10 @@ video {
   letter-spacing: 2.5px;
 }
 
+.bordered {
+  text-transform: uppercase;
+}
+
 .bordered:before {
 	content: '';
   display: block;
@@ -186,6 +191,10 @@ video {
   width: 80px;
   background-color: #fff;
   margin: 20px auto 0;
+}
+
+.bordered-over:after, .bordered-over:before {
+  background-color: #000;
 }
 
 .box-link {
@@ -277,6 +286,10 @@ video {
 	letter-spacing: 2.5px;
 }
 
+.news {
+  
+}
+
 form {
 	text-align: center;
 }
@@ -309,10 +322,9 @@ form input {
 }
 
 footer {
-  display: block;
   padding: 20px;
   font-family: sans-serif;
-  margin-bottom: 50px;
+  background-color: #e6e6e6;
 }
 
 .social-icons {
@@ -321,17 +333,17 @@ footer {
 
  ul {
  list-style-type: none;
- display: inline;
  }
 
 .icon {
   float: left;
   position: relative;
-  width: 19%;
-  height: 0;
-  margin: 1% 0.5%;
-  padding-bottom: 19%;
+  width: 60px;
+  margin: 2%;
+  padding-bottom: 60px;
+  background-color: #e6e6e6;
 }
+
 @media all and (min-width: 640px) {
   .icon {
     width: 9%;
@@ -341,6 +353,7 @@ footer {
 .icon:last-of-type {
   margin-right: 0;
 }
+
 .icon a {
   display: block;
   position: absolute;
@@ -366,7 +379,8 @@ footer {
   width: 100%;
   margin-top: -7px;
   color: #fff;
-  font-size: 10px;
+  font-size: 8px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   transition: all 0.3s ease-out;
   opacity: 0;
@@ -374,32 +388,146 @@ footer {
   transform: translateZ(0);
   will-change: transform;
 }
+
 .icon:hover .icon__name {
   transition: all 0.3s ease-out;
   opacity: 1;
   filter: blur(0);
 }
 .icon--facebook a {
-  background-color: #fff;
+  background-color: #e6e6e6;
   background-image: url('http://simpleicons.org/icons/facebook.svg');
 }
 .icon--twitter a {
-  background-color: #fff;
+  background-color: #e6e6e6;
   background-image: url('http://simpleicons.org/icons/twitter.svg');
 }
 .icon--instagram a {
-  background-color: #fff;
+  background-color: #e6e6e6;
   background-image: url('http://simpleicons.org/icons/instagram.svg');
 }
 .icon--spotify a {
-  background-color: #fff;
+  background-color: #e6e6e6;
   background-image: url('http://simpleicons.org/icons/spotify.svg');
 }
-.icon--tripadvisor a {
-  background-color: #fff;
-  background-image: url('http://simpleicons.org/icons/tripadvisor.svg');
+
+.contact-details {
+  border-left: solid 1px #000;
+  padding-left: 30px;
 }
 
-.footer-divider {
-  margin: 0;
+@media (max-width: 991px) {
+  .contact-details {
+    border: none;
+  }
 }
+
+.contact-details a {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.padding {
+  color: transparent;
+}
+
+.feedback {
+  border-left: solid 1px #000;
+  padding-left: 30px;
+}
+
+@media (max-width: 991px) {
+  .feedback {
+    border: none;
+  }
+}
+
+.feedback h6, .feedback p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 20px;
+  letter-spacing: 2px;
+}
+
+.modal-content {
+  background: url("../images/beachfromabove.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.modal-header {
+  border: 0;
+}
+
+.modal-body {
+  padding: 10px 30px;
+}
+
+#myModalLabel {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 10px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+
+.feedback-form form input, .feedback-form form textarea {
+  display: block;
+  margin: 10px auto;
+  border-color: transparent;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  background-color: rgba(255,255,255,0.90);
+  border-radius: 10px;
+}
+
+.modal-footer {
+  border: 0;
+}
+
+.modal-footer button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.modal-footer button:hover {
+  background-color: pink;
+  color: #333;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: 10px 16px;
+  font-size: 14px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #000;
+  border: none;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+.btn-group-lg>.btn, .btn-lg:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.copyright {
+  font-size: 10px;
+  padding: 0 20px 0 0;
+  letter-spacing: 2px;
+  text-align: right;
+}
+
+
+
+992px 
