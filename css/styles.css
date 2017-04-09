@@ -329,6 +329,8 @@ footer {
 
 .social-icons {
   max-width: 600px;
+  padding-left: 20px;
+  margin: -15px 0 0 0;
 }
 
  ul {
@@ -339,9 +341,15 @@ footer {
   float: left;
   position: relative;
   width: 60px;
-  margin: 2%;
+  margin: 6%;
   padding-bottom: 60px;
   background-color: #e6e6e6;
+}
+
+@media (max-width: 640px) {
+  .icon {
+    margin:2%;
+  }
 }
 
 @media all and (min-width: 640px) {
@@ -350,6 +358,7 @@ footer {
     padding-bottom: 9%;
   }
 }
+
 .icon:last-of-type {
   margin-right: 0;
 }
@@ -368,11 +377,13 @@ footer {
   background-position: center center;
   transition: all 0.2s ease-out;
 }
+
 .icon a:hover {
   background-color: #222;
   background-size: 0%;
   transition: all 0.2s ease-out;
 }
+
 .icon__name {
   position: absolute;
   top: 50%;
