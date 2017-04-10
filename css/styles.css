@@ -38,7 +38,6 @@ video {
 }
 
 #landing-page p {
-	display:inline-block;
 	margin-top: -20px;
 	margin-left: 81px;
 	font-size: 50px;
@@ -59,6 +58,29 @@ video {
 	margin-top: 200px;
 	width: 30%;
 	text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  #landing-page h1 {
+    margin-left: -10px;
+    text-align: center;
+    color: #000
+  }
+  #landing-page p {
+    margin-left: 0;
+    text-align: center;
+    color: #000;
+  }
+  #landing-page a {
+    color: #000;
+  }
+  video {
+    display: none;
+  } 
+  #overlay {
+    background: url("../images/beachfromabove.jpg") no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .navbar {
@@ -94,6 +116,10 @@ video {
 
 .navbar-toggle {
 	margin-right: 30px;
+}
+
+.navbar-default .navbar-brand {
+    color: pink;
 }
 
 .container-fluid {
@@ -135,9 +161,27 @@ video {
   font-size: 20px;
   color: #000;
   font-weight: bold;
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(230,230,230,0.60);
   border-radius: 15px;
   padding: 0 15px;
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .paragraph-content-inner p {
+    font-size: 16px;
+  }
+  .paragraph-content-inner {
+    padding: 50px; 
+  }
+}
+
+@media (max-width: 650px) {
+  .paragraph-content-inner p {
+    font-size: 16px;
+  }
+  .paragraph-content-inner {
+    padding: 50px; 
+  }
 }
 
 .square-box:after{
@@ -271,11 +315,10 @@ video {
   font-size: 12px;
 }
 
-
 .sign-up-content-inner h6 {
 	text-align: center;
-	text-transform: uppercase;
 	letter-spacing: 2.5px;
+  padding-top: 20px;
 }
 
 .sign-up-content-inner h5 {
@@ -292,6 +335,7 @@ video {
 
 form {
 	text-align: center;
+  padding-top: 20px;
 }
 
 form input {
@@ -304,11 +348,41 @@ form input {
 }
 
 .submit {
-	margin-top:10px;
+	margin-top:20px;
 	padding: 0 20px;
 	color: #fff;
 	background-color: #000;
 	border-radius: 5px;
+}
+
+@media (max-width: 1260px) {
+  .submit {
+    margin-top: 10px;
+  }
+  form {
+    padding-top: 0;
+  }
+  .sign-up-content-inner h6 {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 1152px) {
+  .submit {
+    margin-top: 5px;
+  }
+  .sign-up-content-inner h5 {
+    font-size: 14px;
+  }
+  .sign-up-content-inner h6 {
+    margin-top: 0;
+  }
+  form {
+    padding: 0;
+  }
+  form input {
+    padding-top: 5px;
+  }
 }
 
 .hide-mobile {
@@ -427,12 +501,6 @@ footer {
   padding-left: 30px;
 }
 
-@media (max-width: 991px) {
-  .contact-details {
-    border: none;
-  }
-}
-
 .contact-details a {
   color: #000;
   font-family: 'Roboto', sans-serif;
@@ -452,6 +520,9 @@ footer {
 
 @media (max-width: 991px) {
   .feedback {
+    border: none;
+  }
+  .contact-details {
     border: none;
   }
 }
@@ -539,6 +610,76 @@ footer {
   text-align: right;
 }
 
+@media (max-width: 1152px) {
+  .contact-details a {
+    font-size: 12px;
+  }
+}
 
+.pax {
+  background: transparent;
+   min-height: 700px;
+}
 
-992px 
+.menu-box {
+  padding-top: 200px;
+}
+
+.menu-box-content {
+  max-width: 600px;
+  text-align: center;
+  background-color: rgba(235,235,235,0.50);
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.menu-box-content h6 {
+  margin: 0;
+  padding: 30px 0 20px;
+  font-size: 16px;
+}
+
+.menu-box-content p {
+  font-family: 'Poiret One', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 40px;
+  text-align: justify;
+}
+
+.menu-box-content a {
+  display: block;
+  padding-bottom: 50px;
+  color: pink;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about-content-inner {
+  text-align: center;
+  letter-spacing: 2.5px;
+  padding-top: 20px;
+  color: #000;
+}
+
+.about-content-inner h6 {
+  font-size: 14px
+}
+
+.about-content-inner h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.about-content-inner p {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box iframe {
+  width: 100%;
+  margin: 0;
+  padding: 0 15px 0 0;
+}
+

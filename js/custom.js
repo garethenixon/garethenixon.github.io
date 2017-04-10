@@ -13,3 +13,11 @@
     $(this).find('.bordered').removeClass('bordered-over');
     $(this).find('.news').css('color','#fff');
   });
+
+$('.pax-1').parallax({imageSrc: 'images/chicken.jpg'});
+
+$('.pax-2').parallax({imageSrc: 'images/wine.jpg'});
+
+$('.pax-3').parallax({imageSrc: 'images/pinkdessert.jpg'});
+
+$('.pax-4').parallax({imageSrc: 'images/cocktails.jpeg'});
