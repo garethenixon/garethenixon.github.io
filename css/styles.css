@@ -677,6 +677,10 @@ footer {
   padding-right: 20px;
 }
 
+.google-map {
+  line-height: 0;
+}
+
 .box iframe {
   width: 100%;
   margin: 0;
