@@ -91,6 +91,10 @@ video {
 	margin-bottom: 0;
 }
 
+.navbar-nav {
+  padding-left: 50px;
+}
+
 .brand {
   font-family: 'Roboto', sans-serif;
   color: pink;
@@ -653,6 +657,7 @@ footer {
   color: pink;
   font-size: 16px;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .about-content-inner {
@@ -687,30 +692,64 @@ footer {
   padding: 0 15px 0 0;
 }
 
+.news-box:after{
+  content: "";
+  display: block;
+  padding-bottom: 50%;
+}
 
-.news-content {
-	background-color: #000;
+.news-content{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background: #000;
 }
 
 .news-content-inner {
+/*  display: table;*/
+  width: 100%;
+  height: 50%;
+  padding:20px;
+}
+
+.news-content-inner h5 {
+  /*display: table-cell;*/
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 16px;
   letter-spacing: 2.5px;
-  padding-top: 20px;
-  color: #fff;
+  text-transform: uppercase;
 }
 
 .news-content-inner h6 {
   font-size: 14px;
   text-align: center;
-}
-
-.news-content-inner h5 {
-  font-size: 16px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  letter-spacing: 2.5px
 }
 
 .news-content-inner p {
-  padding: 20px 50px;
+  padding: 10px 50px;
   text-transform: justify;
+  font-size: 14px;
+}
+
+@media (min-width: 992px) and (max-width: 1260px) {
+  .news-content-inner {
+    padding: 10px;
+  }
+  .news-content-inner h5 {
+    font-size: 12px;
+  }
+  .news-content-inner h6 {
+    font-size: 10px; 
+  }
+  .news-content-inner p {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
 }
