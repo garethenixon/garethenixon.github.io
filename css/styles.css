@@ -687,3 +687,30 @@ footer {
   padding: 0 15px 0 0;
 }
 
+
+.news-content {
+	background-color: #000;
+}
+
+.news-content-inner {
+  letter-spacing: 2.5px;
+  padding-top: 20px;
+  color: #fff;
+}
+
+.news-content-inner h6 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.news-content-inner h5 {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.news-content-inner p {
+  padding: 20px 50px;
+  text-transform: justify;
+}
